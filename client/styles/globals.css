@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "duplet-regular";
+  src: url(../lib/localfonts/Duplet-Regular-BF642a340663b06.otf);
+}
+@font-face {
+  font-family: "duplet-semibold";
+  src: url(../lib/localfonts/Duplet-Semibold-BF642a34066f658.otf);
+}
+
+/* *
+{
+    overflow-x: hidden;
+} */
+
+.login {
+  background-image: url("/images/login-bg.svg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.navhero {
+  background-image: url(../public/images/navhero.webp);
+  min-height: 87vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: initial;
+}
+#otpless-floating-button {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 100px) {
+  .minustop {
+    margin-top: -80px !important;
+  }
+}
